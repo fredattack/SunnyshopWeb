@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93BC1CD4-D07F-4271-A509-51A5CCBBEF83}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sunnyShopWeb</RootNamespace>
+    <AssemblyName>sunnyShopWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="couchePresentation\magnific-popup.css" />
+    <Content Include="couchePresentation\mainPage.aspx" />
+    <Content Include="couchePresentation\MotifsHTML\motifAlcool.html" />
+    <Content Include="couchePresentation\MotifsHTML\motifChemise.html" />
+    <Content Include="couchePresentation\MotifsHTML\motifDetailOrder.html" />
+    <Content Include="couchePresentation\MotifsHTML\motifOrderClient.html" />
+    <Content Include="couchePresentation\MotifsHTML\MotifPanier.html" />
+    <Content Include="couchePresentation\MotifsHTML\motifVin.html" />
+    <Content Include="couchePresentation\orderData.aspx" />
+    <Content Include="couchePresentation\pageAlcool.aspx" />
+    <Content Include="couchePresentation\pageChemise.aspx" />
+    <Content Include="couchePresentation\pageCommande.aspx" />
+    <Content Include="couchePresentation\pageConfirmationOrder.aspx" />
+    <Content Include="couchePresentation\pageDetailOrder.aspx" />
+    <Content Include="couchePresentation\PageInscription.aspx" />
+    <Content Include="couchePresentation\pageLogin.aspx" />
+    <Content Include="couchePresentation\PageMessage.aspx" />
+    <Content Include="couchePresentation\pagePanier.aspx" />
+    <Content Include="couchePresentation\pagePanierTemp.aspx" />
+    <Content Include="couchePresentation\pageProduit.aspx" />
+    <Content Include="couchePresentation\pageUserProfil.aspx" />
+    <Content Include="couchePresentation\pageVin.aspx" />
+    <Content Include="couchePresentation\panierData.aspx" />
+    <Content Include="couchePresentation\scipts\jquery-3.2.1.js" />
+    <Content Include="couchePresentation\scipts\jquery-ui.js" />
+    <Content Include="couchePresentation\scipts\sunnyShopWeb.js" />
+    <Content Include="packages.config" />
+    <Content Include="couchePresentation\SunnyMasterPage.Master" />
+    <Content Include="classesMetier\ClassDiagram1.cd" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="couchePresentation\Style.css" />
+    <Content Include="couchePresentation\index.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classesMetier\Alcool.cs" />
+    <Compile Include="classesMetier\Chemise.cs" />
+    <Compile Include="classesMetier\OrderDetails.cs" />
+    <Compile Include="coucheAccesBD\AjouterCommandeBd.cs" />
+    <Compile Include="coucheAccesBD\AjouterLigneCommandeBd.cs" />
+    <Compile Include="coucheAccesBD\AjouterUserBd.cs" />
+    <Compile Include="coucheAccesBD\LastOrderIdBd.cs" />
+    <Compile Include="classesMetier\Order.cs" />
+    <Compile Include="classesMetier\User.cs" />
+    <Compile Include="classesMetier\Vin.cs" />
+    <Compile Include="coucheAccesBD\AccesBd.cs" />
+    <Compile Include="coucheAccesBD\lireAlcoolSpecifiqueBd.cs" />
+    <Compile Include="coucheAccesBD\LireChemiseSpecifiqueBd.cs" />
+    <Compile Include="coucheAccesBD\lireVinSpecifiqueBd.cs" />
+    <Compile Include="coucheAccesBD\ListerAlcoolsBd.cs" />
+    <Compile Include="coucheAccesBD\ListerChemisesBd.cs" />
+    <Compile Include="coucheAccesBD\ListerOrderClientBd.cs" />
+    <Compile Include="coucheAccesBD\listerOrderDetailsBd.cs" />
+    <Compile Include="coucheAccesBD\ListerVinsBd.cs" />
+    <Compile Include="coucheAccesBD\ModifierUserBd.cs" />
+    <Compile Include="coucheAccesBD\TestLoginBd.cs" />
+    <Compile Include="coucheAccesBD\CreateUserLoginBd.cs" />
+    <Compile Include="coucheAccesBD\ExceptionAccesBd.cs" />
+    <Compile Include="coucheAccesBD\OperationBD.cs" />
+    <Compile Include="coucheAccesBD\LireUserSpecifiqueBd.cs" />
+    <Compile Include="coucheAccesBD\upDateStockBd.cs" />
+    <Compile Include="coucheMetier\ExceptionMetier.cs" />
+    <Compile Include="coucheMetier\Metier.cs" />
+    <Compile Include="couchePresentation\BundleConfig.cs" />
+    <Compile Include="couchePresentation\mainPage.aspx.cs">
+      <DependentUpon>mainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\mainPage.aspx.designer.cs">
+      <DependentUpon>mainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\orderData.aspx.cs">
+      <DependentUpon>orderData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\orderData.aspx.designer.cs">
+      <DependentUpon>orderData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageAlcool.aspx.cs">
+      <DependentUpon>pageAlcool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageAlcool.aspx.designer.cs">
+      <DependentUpon>pageAlcool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageChemise.aspx.cs">
+      <DependentUpon>pageChemise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageChemise.aspx.designer.cs">
+      <DependentUpon>pageChemise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageCommande.aspx.cs">
+      <DependentUpon>pageCommande.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageCommande.aspx.designer.cs">
+      <DependentUpon>pageCommande.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageConfirmationOrder.aspx.cs">
+      <DependentUpon>pageConfirmationOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageConfirmationOrder.aspx.designer.cs">
+      <DependentUpon>pageConfirmationOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageDetailOrder.aspx.cs">
+      <DependentUpon>pageDetailOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageDetailOrder.aspx.designer.cs">
+      <DependentUpon>pageDetailOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\PageInscription.aspx.cs">
+      <DependentUpon>PageInscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\PageInscription.aspx.designer.cs">
+      <DependentUpon>PageInscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageLogin.aspx.cs">
+      <DependentUpon>pageLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageLogin.aspx.designer.cs">
+      <DependentUpon>pageLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\PageMessage.aspx.cs">
+      <DependentUpon>PageMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\PageMessage.aspx.designer.cs">
+      <DependentUpon>PageMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pagePanier.aspx.cs">
+      <DependentUpon>pagePanier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pagePanier.aspx.designer.cs">
+      <DependentUpon>pagePanier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pagePanierTemp.aspx.cs">
+      <DependentUpon>pagePanierTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pagePanierTemp.aspx.designer.cs">
+      <DependentUpon>pagePanierTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageProduit.aspx.cs">
+      <DependentUpon>pageProduit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageProduit.aspx.designer.cs">
+      <DependentUpon>pageProduit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageVin.aspx.cs">
+      <DependentUpon>pageVin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageVin.aspx.designer.cs">
+      <DependentUpon>pageVin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\panierData.aspx.cs">
+      <DependentUpon>panierData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\panierData.aspx.designer.cs">
+      <DependentUpon>panierData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\SunnyMasterPage.Master.cs">
+      <DependentUpon>SunnyMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\SunnyMasterPage.Master.designer.cs">
+      <DependentUpon>SunnyMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="couchePresentation\pageUserProfil.aspx.cs">
+      <DependentUpon>pageUserProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="couchePresentation\pageUserProfil.aspx.designer.cs">
+      <DependentUpon>pageUserProfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\imgAlcool\" />
+    <Folder Include="images\imgChemise\" />
+    <Folder Include="images\imgDivers\" />
+    <Folder Include="images\imgVin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56637</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56637/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

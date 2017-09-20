@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="sunnyShopWeb.classesMetier.Alcool">
+    <Position X="0.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>FEAgABRAAAAEAACAAAAAgCIABCAjAASAAyAAgAYgJCA=</HashCode>
+      <FileName>classesMetier\Alcool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sunnyShopWeb.classesMetier.Chemise">
+    <Position X="2.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AIAFAAACoAAgAKAAIAAAAAICACACAABAACgAQACoBSA=</HashCode>
+      <FileName>classesMetier\Chemise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sunnyShopWeb.classesMetier.Order">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAACAAAAAAIAAAAAAAADAAAAAQAAAAEAACEBAgAg=</HashCode>
+      <FileName>classesMetier\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sunnyShopWeb.classesMetier.OrderDetails">
+    <Position X="7" Y="5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAiAAABAg=</HashCode>
+      <FileName>classesMetier\OrderDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sunnyShopWeb.classesMetier.User">
+    <Position X="9" Y="0.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAACABAAAgANAAAADQAAAAAAAACAAAQCgAAEAg=</HashCode>
+      <FileName>classesMetier\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sunnyShopWeb.classesMetier.Vin">
+    <Position X="4.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EQAACAGBAAAAgQAAIBARACIQASACIAIoBiASABYAACA=</HashCode>
+      <FileName>classesMetier\Vin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

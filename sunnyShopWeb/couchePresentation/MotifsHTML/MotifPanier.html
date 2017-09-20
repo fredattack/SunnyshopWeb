@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="listPanierMotif">
+        <table class="listPanierTab">
+            <tr>
+                <th class=" deleteProd">
+                    <img class="delete" id="del{6}" src="/images/imgDivers/trash.png" alt="" onclick='deleteItem(this.id);' onmousemove='overElement(this);' onmouseout='outElement(this);' />
+
+                </th>
+                <th class="imageProdPanier">
+                    <a class="image-popup-fit-width" href="/images/{0}">
+                        <img src="/images/{0}">
+                    </a>
+                </th>
+                <th class="colNomPanier">{1}</th>
+                <th class="colPrix">{2}</th>
+
+
+                <th class="colQuantPanier">
+                    <p class="hidden" id="laId{6}">{5}</p>
+                    <p class="hidden" id="prix{6}">{2}</p>
+                    <p class="hidden" id="laStock{6}">{7}</p>
+                    <img class="add" id="addPan{6}" src="/images/imgDivers/add.png" alt="" onclick='addQuantPan(this.id);' onmousemove='overElement(this);' onmouseout='outElement(this);' />
+                    <span><input class="TbQuantity" id="TbQPan{6}" type="text" maxlength="2" value="{3}" /></span>
+                    <img class="remove" id="remPan{6}" src="/images/imgDivers/remove.png" alt="" onclick='removeQuantPan(this.id);' onmousemove='    overElement(this);' onmouseout='    outElement(this);' />
+
+                </th>
+                <th class="colSousTotal"><p id="ssT{6}">{4} €</p></th>
+            </tr>
+        </table>
+        </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SunnyMasterPage.master.cs" Inherits="sunnyShopWeb.couchePresentation.SunnyMasterPage" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sunny Shop</title>
+      
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="/couchePresentation/magnific-popup.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+		<%--<script type="text/javascript" src='<%= ResolveUrl("/couchePresentation/scipts/jquery.colorbox.js") %>'></script>--%>
+    <script type="text/javascript" src='<%= ResolveUrl("/couchePresentation/scipts/sunnyShopWeb.js") %>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("/couchePresentation/scipts/jquery-3.2.1.js") %>'></script>
+        <%--<script type="text/javascript" src='<%= ResolveUrl("/couchePresentation/scipts/jquery.magnific-popup.js") %>'></script>--%>
+    <script type="text/javascript" src='<%= ResolveUrl("/couchePresentation/scipts/jquery-ui.js") %>'></script>
+		
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <header>
+    <asp:ContentPlaceHolder ID="CPHHeader" runat="server">
+          
+                   
+       
+
+             </asp:ContentPlaceHolder>
+               
+            </header>    
+        <nav>
+                <asp:ContentPlaceHolder ID="CPHMenu" runat="server">
+                   
+       
+
+                </asp:ContentPlaceHolder>
+            </nav>
+            
+            
+        <section>
+                <asp:ContentPlaceHolder ID="CPHContenu" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            
+           
+     <%--    <footer>
+
+
+            </footer>--%>
+        <script>initApp();</script>
+    <%--<script>
+        $(document).ready(function(){
+            $('.image-popup-vertical-fit').magnificPopup({
+                type:'image',
+                closeOnContentClick:true,
+                mainClass:'mfp-img-mobile',
+                image:{
+                    verticalFit:true
+                }
+            });
+        });
+    </script>--%>
+    
+</body>
+</html>

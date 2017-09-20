@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="listVinMotif">
+        <table class="listeVinTab">
+            <tr>
+                <!--#region lightbox-->
+                <td class="ColImage" colspan="3" rowspan="3">
+                    <!--<img src="/images/imgVin/{0}" alt="{0}" /> -->
+                   <!-- <a class="image-popup-fit-width" href="/images/imgAlcool/{0}">-->
+                        <img src="/images/imgAlcool/{0}">
+                    <!--</a>-->
+                </td>
+                <!--#endregion-->
+                <td class="ColType">{1}</td>
+                <td class="ColSaveur">saveur: <span class="propriete">{2}</span> </td>
+                <td class="ColDegre">Degré alcool: <span class="propriete">{3}°</span></td>
+                <td class="ColOrigine">Origine: <span class="propriete">{4}</span></td>
+                <td class="ColStock">Stock:<img src="/images/imgDivers/{5}.png" alt="stock" title="{9}" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2"><h1>{6}</h1></td>
+                <td class="ColPrix" rowspan="2">{7} €</td>
+                <td class="ColQuant" id="ColQuant{8}" colspan="2" rowspan="2">
+
+                    <p class="hidden" id="laStock{8}">{9}</p>
+                    <p class="hidden" id="laIdVin{8}">{10}</p>
+                    <p class="hidden" id="monTest">{11}</p>
+
+                    <img class="add" id="add{8}" src="/images/imgDivers/add.png" alt="" onclick='addQuant(this.id);' onmousemove='overElement(this);' onmouseout='outElement(this);' />
+                    <span><input class="TbQuantity" id="TbQ{8}" type="text" maxlength="2" value="0" /></span>
+                    <img class="remove" id="rem{8}" src="/images/imgDivers/remove.png" alt="" onclick='removeQuant(this.id);' onmousemove='overElement(this);' onmouseout='outElement(this);' />
+                    <input class="myButton" id="but{8}" type="button" value="Ajouter au panier" onclick='addToCartAjax(this.id);' />
+                </td>
+            </tr>
+            <tr></tr>
+        </table>
+    </div>
+</body>
+</html>
